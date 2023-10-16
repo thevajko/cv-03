@@ -64,3 +64,13 @@ body {
         height: 200px;
     }
 }
+
+#carouselExampleCaptions {
+    width: 640px;
+    height: 300px;
+}
+
+.carousel-inner > .carousel-item > img {
+    width: 640px;
+    height: 300px;
+}
