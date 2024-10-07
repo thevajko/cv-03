@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid layout example</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .grid-layout .header {
+            grid-area: header;
+        }
+
+        .grid-layout .navigation {
+            grid-area: nav;
+        }
+
+        .grid-layout .ads {
+            grid-area: ads;
+        }
+
+        .grid-layout .sidebar {
+            grid-area: sidebar;
+        }
+
+        .grid-layout .main {
+            grid-area: main;
+        }
+
+        .grid-layout .footer {
+            grid-area: footer;
+        }
+
+        .grid-layout > * {
+            border: 1px solid red;
+            padding: 5px;
+        }
+
+        .grid-layout.container {
+            display: grid;
+            height: 100vh;
+            gap: 24px;
+
+            /* Creating 6 rows and 3rd row expands as much as it can */
+            grid-template-rows: auto auto 1fr auto auto auto;
+
+            /* Defining the template */
+            grid-template-areas:
+                "header"
+                "nav"
+                "main"
+                "sidebar"
+                "ads"
+                "footer";
+            }
+
+
+        @media (min-width: 720px) {
+            .grid-layout.container {
+                /* Creating 4 rows and the 3rd row expands as much as it can */
+                grid-template-rows: auto auto 1fr auto;
+
+                /* Defining the template (3 columns) */
+                grid-template-areas:
+                    "header header header"
+                    "nav nav nav"
+                    "sidebar main main"
+                    "ads footer footer";
+            }
+        }
+
+
+        @media (min-width: 1020px) {
+            .grid-layout.container {
+                /* Creating 4 rows and the 3rd row expands as much as it can */
+                grid-template-rows: auto auto 1fr auto;
+
+                /* Defining the template (4 columns) */
+                grid-template-areas: 
+                        "header header header header"
+                        "sidebar nav nav ads"
+                        "sidebar main main ads"
+                        "footer footer footer footer";
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="grid-layout container">
+    <div class="header">Header</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="main">Main</div>
+    <div class="navigation">Navigation</div>
+    <div class="ads">Ads</div>
+    <div class="footer">Footer</div>
+</div>
+</body>
+</html>
