@@ -20,6 +20,14 @@ Toto cvičenie je zamerané na prácu s Bootstrap frameworkom a vytvorenie respo
 13. Po kliknutí na jedno z tlačidiel (vyberte si, ktoré) otvorte modálne okno.
 14. **Domáca úloha**: Skúste pridať medzeru medzi spodné 3 stĺpce.
 
+Výsledné riešenie bude na počítači vyzerať nasledovne:
+
+![desktop.png](desktop.png)
+
+A na mobilnom zariadení:
+
+![mobil.png](mobil.png)
+
 ## Ako nájsť branch môjho cvičenia?
 Pokiaľ sa chcete dostať k riešeniu z cvičenia je potrebné otvoriť si príslušnú _branch_, ktorej názov sa skladá:
 
