@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Flexbox example</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .padding {
+            padding: 5px;
+        }
+
+        .header {
+            height: 50px;
+            background: #FF9AA2;
+        }
+
+        .footer {
+            height: 50px;
+            background: #C7CEEA;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            background: #FFB7B2;
+        }
+
+        .columns {
+            display: flex;
+            flex: 1;
+        }
+
+        .main {
+            flex: 1;
+            order: 2;
+            background: #FFDAC1;
+        }
+
+        .sidebar-left {
+            width: 20%;
+            background: #E2F0CB;
+            order: 1;
+        }
+
+        .sidebar-right {
+            width: 20%;
+            order: 3;
+            background: #B5EAD7;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header padding">Header: Fixed height (50px)</header>
+    <section class="content">
+        <div class="columns">
+            <main class="main padding">Content: Flexible width</main>
+            <aside class="sidebar-left padding">Sidebar left: 20% width</aside>
+            <aside class="sidebar-right padding">Sidebar right: 20% width</aside>
+        </div>
+    </section>
+    <footer class="footer padding">Footer: Fixed height (50px)</footer>
+</div>
+</body>
+</html>
