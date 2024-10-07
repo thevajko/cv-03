@@ -29,7 +29,7 @@ A na mobilnom zariadení:
 ![mobil.png](mobil.png)
 
 ## Ako nájsť branch môjho cvičenia?
-Pokiaľ sa chcete dostať k riešeniu z cvičenia je potrebné otvoriť si príslušnú _branch_, ktorej názov sa skladá:
+Pokiaľ sa chcete dostať k riešeniu z cvičenia, je potrebné otvoriť si príslušnú _branch_, ktorej názov sa skladá:
 
 __MIESTNOST__ + "-" + __HODINA ZAČIATKU__ + "-" + __DEN__
 
