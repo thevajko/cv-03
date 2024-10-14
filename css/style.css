@@ -1,0 +1,9 @@
+.container-fluid {
+    background-color: gray;
+}
+nav.navbar a {
+    color: white;
+}
+.nav-link {
+    color: white
+}
