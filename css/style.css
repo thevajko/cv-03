@@ -1,0 +1,8 @@
+.container-fluid {
+    background-color: gray;
+}
+
+.dropdown-menu li a,
+.container-fluid a {
+    color: white;
+}
