@@ -3,6 +3,12 @@ Momentálne je otvorená branch __MAIN__, ktorá obsahuje _štartér_. Riešenie
 
 Toto cvičenie je zamerané na prácu s Bootstrap frameworkom a vytvorenie responzívneho dizajnu.
 
+Úlohy vypracujte s pomocou AI agena. __POZOR__ ale všetko naraz v jednom prompt-e, ale krok po kroku. Vždy keď vám AI pre daný krok vygeneruje, skontrolujte navrhované úpravy a nezabudnite preskúmať, čo a prečo AI napísala alebo upravila.
+
+# Úloha 01
+
+Prvá úloha je zameraná na vytvorenie responzívneho menu a rozloženia stránky pomocou Bootstrap frameworku.
+
 ##  Postup práce
 
 1. Pripojte si CSS a JS pre Bootstrap (CDN z https://getbootstrap.com/docs/5.3/getting-started/download/)
@@ -18,7 +24,7 @@ Toto cvičenie je zamerané na prácu s Bootstrap frameworkom a vytvorenie respo
 11. Pridajte tabuľku do prvého bloku tak, aby bola responzívna. Pridajte do nej ďalšie tri stĺpce na otestovanie.
 12. Pod tabuľkou vytvorte štyri tlačidlá vedľa seba.
 13. Po kliknutí na jedno z tlačidiel (vyberte si, ktoré) otvorte modálne okno.
-14. **Domáca úloha**: Skúste pridať medzeru medzi spodné 3 stĺpce.
+14. Skúste pridať medzeru medzi spodné 3 stĺpce.
 
 Výsledné riešenie bude na počítači vyzerať nasledovne:
 
@@ -27,6 +33,25 @@ Výsledné riešenie bude na počítači vyzerať nasledovne:
 A na mobilnom zariadení:
 
 ![mobil.png](mobil.png)
+
+# Úloha 02 
+
+Druha úloha sa zameriava na modifikáciu existujúcej stránky pomocou Bootstrap frameworku. Jedná sa o layout veľmi populárnej stránky na predaj najlepšej obuvi akú ľudstvo ked vymyslelo - __KROKSY__.
+
+## Postup práce
+
+1. Upravte existujúci HTML kód tak, aby používal Bootstrap framework.
+2. Upravte menu, tak aby bolo responzívne.
+3. Upravte časť "Máme mobilnú appku", tak aby sa QR kód zobrazoval iba na desktope a pri zobrazení na mobil alebo tablete sa zobrazila ikonka presmerovania do google play alebo app store.
+4. Časť "Upozorňujeme na" upravte tak, aby bola zobrazena na spôsob "carousel".
+5. Naformátujte časť "Najpredávanejšie produkty"  a "Všetky topánočky" tak, aby sa produkty zobrazovali v riadkoch po 6 na desktop,  4 na tablete a 2 na mobile.
+6. Časť "Najpredávanejšie produkty"  a "Všetky topánočky" vizuálne oddelte od zvyšku stránky inou farbou pozadia.
+6. Pri produktoch sa zobrazuju poznamka o akcii alebo či sa jedna o novinku. Tieto informácie zobrazte pomocou "badge".
+7. Nad sekciou "Všetky topánočky" vytvorte vizuál pre filter produktov podľa veľkosti, farby a ceny.
+7. Upravte zobrazenie pagginácie na spodku stránky.
+8. Skúste sa pohrať s dizajnom časti ""Vy a vaše papučky.
+8. Urobte peknu patičku stránky.
+
 
 ## Ako nájsť branch môjho cvičenia?
 Pokiaľ sa chcete dostať k riešeniu z cvičenia je potrebné otvoriť si príslušnú _branch_, ktorej názov sa skladá:
