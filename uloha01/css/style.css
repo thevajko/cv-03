@@ -9,3 +9,7 @@
     background-color: yellow;
 }
 
+/* Custom text alignment */
+.text-justify {
+    text-align: justify;
+}
