@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Layout Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .bg-gray {
+            background-color: #6c757d !important;
+        }
+        .navbar-brand img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .custom-btn-row .btn {
+            min-width: 100px;
+        }
+        .custom-cols .col-md-4, .custom-cols .col-md-5, .custom-cols .col-md-3 {
+            min-height: 250px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-gray">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="images/logo.png" alt="Logo">
+            <span>Link 1</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-3">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Link 2</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container mt-3">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt sapien id turpis lacinia consectetur. Phasellus convallis dui eu consequat euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec sed erat nec nibh tincidunt sollicitudin. Donec posuere tristique nunc, vitae pharetra enim efficitur eu. Ut molestie neque sit amet sem aliquet faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In hac habitasse platea dictumst. Donec interdum congue mauris nec rutrum. Nam sit amet elit diam. Cras placerat sagittis augue in rhoncus.</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>john@example.com</td>
+            </tr>
+            <tr>
+                <td>Mary</td>
+                <td>Moe</td>
+                <td>mary@example.com</td>
+            </tr>
+            <tr>
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="custom-btn-row mb-3">
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+    </div>
+    <div class="row custom-cols">
+        <div class="col-12 col-md-4 bg-primary text-white">
+            Aenean at mi aliquet, tempus libero et, varius elit. Integer vel tellus turpis. Nam eu porttitor nunc. Ut nisi risus, maximus a semper vitae, bibendum auctor nunc. Sed laoreet finibus turpis, eu feugiat ante eleifend a. Sed efficitur lectus at nisl ornare, placerat lacinia enim euismod. Curabitur condimentum, dui id rhoncus sodales, metus diam eleifend nunc, ut pulvinar velit elit vitae ante. Nullam ut velit cursus, feugiat neque vitae, scelerisque metus. Morbi ultrices justo eu tristique laoreet. In tempus finibus nulla sit amet porttitor. Proin imperdiet ipsum vel eleifend lacinia. Fusce dignissim volutpat turpis, at efficitur urna hendrerit ac. Sed congue urna nec augue hendrerit, sit amet varius risus rutrum. Vestibulum et elit lectus.
+        </div>
+        <div class="col-12 col-md-4 bg-danger text-white">
+            Integer ac lorem metus. Aliquam porta a dui non aliquet. Phasellus vitae sollicitudin odio. Morbi nec ornare justo. Aenean tellus nisl, iaculis quis euismod nec, tempus sit amet nibh. Maecenas et nibh vitae elit maximus feugiat. Curabitur aliquam egestas auctor. Etiam sodales lacus in imperdiet varius. Nam vulputate sodales lectus sagittis tristique. Donec egestas sem diam, eu finibus ligula consequat ut. Nulla eleifend sapien vel dui condimentum, vel sodales libero volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        </div>
+        <div class="col-12 col-md-4 bg-success text-dark">
+            Sed elementum a leo a semper. Donec massa sem, commodo ac bibendum in, lobortis ac magna. Etiam semper tincidunt fringilla. Proin id vulputate ex. Nullam nisl quam, vulputate at placerat eget, mollis eu odio. Duis non pellentesque arcu. Nunc condimentum at tellus vitae tempus. Ut sit amet velit rhoncus, sodales urna at, tristique magna.
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
